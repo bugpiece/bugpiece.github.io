@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Daichi Kusumoto"
   pronouns         : # example: "she/her"  
-  bio              : "MDes Student"
+  bio              : "MDes Student at Kyushu University"
   location         : "Fukuoka, Japan"
-  employer         : "Kyushu University"
+  employer         : #
   uri              : # URL
   email            : "kusumoto.daichi.702@s.kyushu-u.ac.jp" 
 
