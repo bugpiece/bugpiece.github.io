@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Daichi KUSUMOTO / Profile"
+title                    : "Daichi Kusumoto / Profile"
 title_separator          : "-"
-name                     : &name "Daichi KUSUMOTO"
+name                     : &name "Daichi Kusumoto"
 description              : &description "Introduction of Daichi KUSUMOTO"
 url                      : https://bugpiece.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "bugpiece/bugpiece.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,9 +22,9 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Daichi Kusumoto"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "MDes Student"
   location         : "Fukuoka, Japan"
   employer         : "Kyushu University"
   uri              : # URL
