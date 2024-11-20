@@ -23,12 +23,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Daichi Kusumoto"
-  pronouns         : # example: "she/her"  
+  pronouns         : # example: "she/her"
   bio              : "MDes Student at Kyushu University"
   location         : "Fukuoka, Japan"
   employer         : #
   uri              : # URL
-  email            : "kusumoto.daichi.702@s.kyushu-u.ac.jp" 
+  email            : "kusumoto.daichi.702@s.kyushu-u.ac.jp"
 
   # Academic websites
   arxiv            : # URL
@@ -44,8 +44,8 @@ author:
   codepen          : # Username
   dribbble         : # Username
   github           : "bugpiece"
-  kaggle           : # Username  
-  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  kaggle           : # Username
+  stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")
 
   # Social media
   bluesky          : # Username
@@ -65,7 +65,7 @@ publication_category:
   books:
     title: 'Preprints'
   manuscripts:
-    title: 'Journal Publications'    
+    title: 'Journal Publications'
   conferences:
     title: 'Conference Papers'
 
