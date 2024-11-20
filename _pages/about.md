@@ -19,20 +19,20 @@ My main research interests are in Human-Machine Motor Co-operation, Motor Contro
 
 # Education
 feature_KU:
-  - image_path: Geiko.jpg
+  - image_path: "Geiko.jpg"
     alt: "KU"
     date: "2023.10 - Present"
     title: 'Graduate School of Design, Kyushu University'
     subtitle: "Master of Design"
     excerpt:  "Research Topic: Ergonomics, Assistive Technology"
 feature_OJT:
-  - image_path: OJT.jpg
+  - image_path: "OJT.jpg"
     alt: "OUJ"
     date: "2021.10 - 2023.9"
     title: "Bachelor of Liberal Arts (Transfer Admission), The Open University of Japan"
     excerpt: "Relevant Coursework: Cognitive and Physiological Psychology, Human-Computer Interaction"
 feature_utokyo_be:
-  - image_path: NITkit.jpg
+  - image_path: "NITkit.jpg"
     alt: "NITkit"
     date: "2013.4 - 2018.3"
     title: "Associate degree in Engineering, Kitakyushu National college of Technology"
