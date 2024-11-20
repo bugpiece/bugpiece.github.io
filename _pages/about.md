@@ -1,6 +1,12 @@
 ---
 permalink: /
-title: #"Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Daichi Kusumoto"
+excerpt: "MDes Student at Kyushu University"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: "Dazaifu_Tenmangu.jpg"
+  caption: "Photo by Daichi Kusumoto / Dazaifu, Fukuoka"
 author_profile: True
 redirect_from:
   - /about/
@@ -17,4 +23,4 @@ kusumoto.daichi.702{at}s.kyushu-u.ac.jp
 
 Recent News
 ------
-Norvember.2024 Opend this website.
+Norvember.2024 Opened this website.
