@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Daichi Kusumoto"
 title_separator          : "-"
 name                     : &name "Daichi Kusumoto"
-description              : &description "Introduction of Daichi KUSUMOTO"
+description              : &description "MDes Student at Kyushu University"
 url                      : https://bugpiece.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bugpiece/bugpiece.github.io"
@@ -73,8 +73,8 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : false
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+future                   : true
+read_more                : "diabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -103,7 +103,6 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -135,7 +134,6 @@ analytics:
   provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
-
 
 # Reading Files
 include:
