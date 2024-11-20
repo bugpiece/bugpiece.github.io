@@ -1,12 +1,11 @@
 ---
 permalink: /
 title: #"Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
-author_profile: False
+author_profile: True
 redirect_from:
   - /about/
   - /about.html
 ---
-Profile
 ======
 I am a master student at Kyushu University in Graduate school of Design in the [Laboratory of Ergonomics for All Ages and Abilities](https://www.design.kyushu-u.ac.jp/~muraki/en/index.html). My adviser is [Professor Satoshi Muraki](https://hyoka.ofc.kyushu-u.ac.jp/html/100021109_en.html).
 
