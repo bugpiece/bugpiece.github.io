@@ -283,122 +283,122 @@
     }
     
     
-    /*
-      Mini Features
-      ========================================================================== */
-    
-    .minifeature__wrapper {
+ /*
+   Mini Features
+   ========================================================================== */
+  
+   .minifeature__wrapper {
     @include clearfix();
     margin-bottom: 0.25em;
-    }
-    
-    .minifeature__item {
+  }
+  
+  .minifeature__item {
     margin-bottom: 2em;
     font-size: 1.25rem;
-    
-    @include breakpoint($small) {
-    margin-bottom: 0;
-    @include gallery(4 of 12);
-    
-    .minifeature__item-teaser {
-    max-height: 200px;
-    overflow: hidden;
+  
+    @include breakpoint($xsmall) {
+      margin-bottom: 0;
+      @include gallery(4 of 12);
+  
+      .minifeature__item-teaser {
+        max-height: 200px;
+        overflow: hidden;
+      }
     }
-    }
-    
+  
     &--left {
-    @include full();
-    font-size: 1.25rem;
-    
-    .archive__item-teaser {
-    margin-bottom: 2em;
+      @include full();
+      font-size: 1.25rem;
+  
+      .archive__item-teaser {
+        margin-bottom: 2em;
+      }
+  
+      @include breakpoint($xsmall) {
+  
+        .archive__item-teaser {
+          @include span(1.5 of 12);
+        }
+  
+        .archive__item-title {
+          margin-top: 0;
+          margin-bottom: 0.5em;
+          border-bottom: none;
+        }
+  
+        .archive__item-body {
+          @include span(9 at 1);
+          @include prefix(0.2 of 12);
+          @include suffix(0.2 of 12);
+        }
+
+        .archive__item-subtitle {
+          margin-bottom: 0.5em;
+          font-size: $type-size-6;
+
+          & + p {
+            text-indent: 0;
+          }
+        }
+
+        .archive__item-datebox {
+          @include span(1.5 of 12 last);
+        }
+
+        .archive__item-date {
+          word-break: break-normal;
+          text-align: right;
+          margin-top: 0;
+          border-bottom: none;
+        }
+
+
+      }
     }
-    
-    @include breakpoint($small) {
-    
-    .archive__item-teaser {
-    @include span(1.5 of 12);
-    }
-    
-    .archive__item-title {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    border-bottom: none;
-    }
-    
-    .archive__item-body {
-    @include span(9 at 1);
-    @include prefix(0.2 of 12);
-    @include suffix(0.2 of 12);
-    }
-    
-    .archive__item-subtitle {
-    margin-bottom: 0.5em;
-    font-size: $type-size-6;
-    
-    & + p {
-    text-indent: 0;
-    }
-    }
-    
-    .archive__item-datebox {
-    @include span(1.5 of 12 last);
-    }
-    
-    .archive__item-date {
-    word-break: break-normal;
-    text-align: right;
-    margin-top: 0;
-    border-bottom: none;
-    }
-    
-    
-    }
-    }
-    
+  
     &--right {
-    @include full();
-    font-size: 1.25rem;
-    
-    .archive__item-teaser {
-    margin-bottom: 2em;
+      @include full();
+      font-size: 1.25rem;
+  
+      .archive__item-teaser {
+        margin-bottom: 2em;
+      }
+  
+      @include breakpoint($small) {
+        text-align: right;
+  
+        .archive__item-teaser {
+          @include span(5 of 12 rtl);
+        }
+  
+        .archive__item-body {
+          @include span(7 of 12 last rtl);
+          @include prefix(0.5 of 12);
+          @include suffix(1 of 12);
+        }
+      }
     }
-    
-    @include breakpoint($small) {
-    text-align: right;
-    
-    .archive__item-teaser {
-    @include span(5 of 12 rtl);
-    }
-    
-    .archive__item-body {
-    @include span(7 of 12 last rtl);
-    @include prefix(0.5 of 12);
-    @include suffix(1 of 12);
-    }
-    }
-    }
-    
+  
     &--center {
-    @include full();
-    font-size: 1.25rem;
-    
-    .archive__item-teaser {
-    margin-bottom: 2em;
+      @include full();
+      font-size: 1.25rem;
+  
+      .archive__item-teaser {
+        margin-bottom: 2em;
+      }
+  
+      @include breakpoint($small) {
+        text-align: center;
+  
+        .archive__item-teaser {
+          margin: 0 auto;
+          width: span(5 of 12);
+        }
+  
+        .archive__item-body {
+          margin: 0 auto;
+          width: span(7 of 12);
+        }
+      }
     }
-    
-    @include breakpoint($small) {
-    text-align: center;
-    
-    .archive__item-teaser {
-    margin: 0 auto;
-    width: span(5 of 12);
-    }
-    
-    .archive__item-body {
-    margin: 0 auto;
-    width: span(7 of 12);
-    }
-    }
-    }
-    }
+  }

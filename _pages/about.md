@@ -27,7 +27,7 @@ feature_OUJ:
     excerpt: " » Department: Psychology and Education (GPA: 3.77 / 4.00)<br> » Relevant Coursework: Cognitive and Physiological Psychology, Human-Computer Interaction"
 
 feature_NITkit:
-  - image_path: 'NITkit.jpg'
+  - image_path: NITkit.jpg
     alt: "NITkit"
     date: "2013.4 - 2018.3"
     title: "Kitakyushu National college of Technology"
