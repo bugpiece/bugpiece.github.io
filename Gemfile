@@ -4,15 +4,10 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "webrick", "~> 1.7"
 gem "nokogiri", "< 1.16" # nokogiriのバージョン制限
-
-# ローカル環境用のGem
-group :development do
-  gem "jekyll-scholar", group: :jekyll_plugins
-end
+gem "jekyll-scholar"
 
 # GitHub Pages環境用のGem
 group :jekyll_plugins do
-  gem "github-pages", "<= 227"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "hawkins"
