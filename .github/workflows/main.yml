@@ -1,0 +1,36 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - gh-pages  # デプロイ対象のブランチ名
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. リポジトリのチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Ruby環境のセットアップ
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.8'
+          bundler-version: '2.1.4'
+
+      # 3. 依存関係のインストール
+      - name: Install dependencies
+        run: bundle install
+
+      # 4. Jekyllでビルド
+      - name: Build site
+        run: bundle exec jekyll build
+
+      # 5. GitHub Pagesへのデプロイ
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          publish_dir: ./_site
