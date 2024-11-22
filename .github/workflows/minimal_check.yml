@@ -1,0 +1,19 @@
+name: Check Ruby Version
+
+on:
+  push:
+    branches:
+      - main # デフォルトブランチを指定
+
+jobs:
+  check-ruby-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Check installed Ruby version
+        run: ruby -v
+
+      - name: List all available Ruby versions
+        run: rbenv versions
