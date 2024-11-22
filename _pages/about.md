@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Daichi Kusumoto"
+title: "Exoskeleton Researcher"
 excerpt: "MDes Student at Kyushu University"
 header:
   overlay_color: "#000"
@@ -16,7 +16,7 @@ feature_KU:
     date: "2023.10 - Present"
     title: 'Graduate School of Design, Kyushu University'
     subtitle: "Master of Design"
-    excerpt:  "» Department: Human Life Design and Science (GPA: 4.00/ 4.00)Research Topic: Ergonomics, Assistive Technology"
+    excerpt:  " » Department: Human Life Design and Science (GPA: 4.00/ 4.00)<br> » Research Topic: Ergonomics, Assistive Technology"
 
 feature_OUJ:
   - image_path: OUJ.jpg
@@ -24,7 +24,7 @@ feature_OUJ:
     date: "2021.10 - 2023.9"
     title: "The Open University of Japan"
     subtitle: "Bachelor of Liberal Arts (Transfer Admission)"
-    excerpt: "»	Department: Psychology and Education (GPA: 3.77 / 4.00)<br>» Relevant Coursework: Cognitive and Physiological Psychology, Human-Computer Interaction"
+    excerpt: " » Department: Psychology and Education (GPA: 3.77 / 4.00)<br> » Relevant Coursework: Cognitive and Physiological Psychology, Human-Computer Interaction"
 
 feature_NITkit:
   - image_path: 'NITkit.jpg'
@@ -32,7 +32,7 @@ feature_NITkit:
     date: "2013.4 - 2018.3"
     title: "Kitakyushu National college of Technology"
     subtitle: "Associate degree in Engineering"
-    excerpt: "»	Department: Mechanical Engineering (GPA: 3.40 / 4.00)<br>Thesis: Design and Development of a Pulse-tube Refrigerator for the Competition"
+    excerpt: " » Department: Mechanical Engineering (GPA: 3.40 / 4.00) <br> » Thesis: Design and Development of a Pulse-tube Refrigerator for the Competition"
 
 # Research Experience
 feature_EAAA:
@@ -56,7 +56,7 @@ feature_TE:
     alt: "TEA"
     date: "2017.4 ~ 2018.3"
     title: 'Undergraduate Student Researcher'
-    subtitle: "<i> Thermoacoustic Engineering Laboratory<br>Supervisor: Takao Koshimizu </i>"
+    subtitle: "<i> Thermoacoustic Engineering Laboratory<br>Advisor: Takao Koshimizu </i>"
     excerpt: " » Developed a high-efficiency, easy-to-produce pulse-tube refrigerator.<br> » Created educational kits to introduce children to thermoacoustic phenomena and Stirling engines through engaging, hands-on learning experiences."
 
 redirect_from:
@@ -77,7 +77,6 @@ My main research interests are in Human-Machine Motor Co-operation, Motor Contro
 {% include minifeature_row id="feature_EAAA" type="left" %}
 {% include minifeature_row id="feature_SUBARU" type="left" %}
 {% include minifeature_row id="feature_TE" type="left" %}
-
 
 Recent News
 ------

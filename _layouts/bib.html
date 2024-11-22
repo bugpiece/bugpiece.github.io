@@ -1,0 +1,76 @@
+---
+---
+<!--print index-->
+<!-- if the content is journal, print [J(index of the entry)]-->
+[{{entry.id}}]
+
+{{reference | replace_first: 'Iiyama, K.', '<b>Iiyama, K.</b>' | replace_first: 'Iiyama*, K.', '<b>Iiyama*, K.</b>' |
+replace_first: 'Iiyama, Keidai.', '<b>Iiyama, Keidai.</b>'}}
+
+<!--award-->
+{% if entry.award %}
+<strong> {{entry.award}} </strong>
+{% endif %}
+
+<!--abstract-->
+{% if entry.abstract %}
+[<a href="javascript:void(0)" onclick="if(document.getElementById('{{key}}-abstract').style.display=='none')
+{document.getElementById('{{key}}-abstract').style.display=''}
+else{document.getElementById('{{key}}-abstract').style.display='none'}">Abstract</a>]
+{% endif %}
+
+<!--bibtex-->
+[<a href="javascript:void(0)" onclick="if(document.getElementById('{{key}}-bibtex').style.display=='none')
+{document.getElementById('{{key}}-bibtex').style.display=''}
+else{document.getElementById('{{key}}-bibtex').style.display='none'}">BibTex</a>]
+
+<!--link-->
+{% if entry.pdf %}
+[<a href="{{entry.pdf}}">Paper</a>]
+{% else %}
+<!--url-->
+{% if entry.url %}
+[<a href="{{entry.url}}">Paper</a>]
+{% endif %}
+{% endif %}
+
+
+<!--link-->
+{% if entry.slides %}
+[<a href="{{entry.slides}}">Slides</a>]
+{% endif %}
+
+<!--code-->
+{% if entry.code %}
+[<a href="{{entry.code}}">Code</a>]
+{% endif %}
+
+
+<!-- {% if entry.abstract %}
+<button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" style="outline:none;">Abstract</button>
+{% endif %} -->
+
+<!-- <button class="btn btnId btnPub--BibTex" id="b_{{key}}-bibtex" style="outline:none;">BibTeX</button> -->
+
+<!-- {% if entry.link %}
+<a href="{{entry.url}}"><button class="btn btnId btnPub--download"
+        style="outline:none; position:relative;white-space: normal;">Paper</button></a>
+{% endif %}
+
+{% if entry.link %}
+<a href="{{entry.link}}"><button class="btn btnId btnPub--download"
+        style="outline:none; position:relative; white-space: normal;">Paper</button></a>
+{% endif %} -->
+
+<div class="dropDownBibtex" id="{{key}}-bibtex" style="display:none; margin: 0 auto">
+    <div style="margin-left: 50px">
+        <pre style="padding: 10px; font-size: small;">{{entry.bibtex}}</pre>
+    </div>
+</div>
+
+<div class="dropDownAbstract" id="{{key}}-abstract"
+    style="display:none; text-align: justify; font-size:medium; margin: 0 auto">
+    <div style="margin-left: 50px">
+        <strong>Abstract: </strong>{{entry.abstract}}
+    </div>
+</div>
