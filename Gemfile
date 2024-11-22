@@ -3,7 +3,8 @@ source "https://rubygems.org"
 # 共通のGem
 gem "jekyll"
 gem "webrick", "~> 1.7"
-gem "nokogiri", "< 1.16" # nokogiriのバージョン制限
+gem "nokogiri", "< 1.16"
+ruby '2.7.8'
 
 # ローカル環境用のGem
 group :development do
