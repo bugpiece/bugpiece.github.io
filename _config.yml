@@ -107,7 +107,7 @@ atom_feed:
 
 
 # SEO Related
-google_site_verification :
+google_site_verification : "googlef5b5e98f5ef6a41a.html"
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
@@ -349,4 +349,3 @@ scholar:
   details_link:   Details
 
   query: "@*"
-  
