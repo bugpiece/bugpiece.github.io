@@ -12,7 +12,7 @@ end
 
 # GitHub Pages環境用のGem
 group :jekyll_plugins do
-  gem "github-pages", "~> 227"
+  gem "github-pages", "<= 227"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "hawkins"
