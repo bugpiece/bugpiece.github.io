@@ -24,7 +24,7 @@ feature_OUJ:
     date: "2021.10 - 2023.9"
     title: "The Open University of Japan"
     subtitle: "Bachelor of Liberal Arts (Transfer Admission)"
-    excerpt: " » Department: Psychology and Education (GPA: 3.77 / 4.00)<br> » Relevant Coursework: Cognitive and Physiological Psychology, Human-Computer Interaction"
+    excerpt: " » Department: Psychology and Education (GPA: 3.77 / 4.00)<br> » Relevant Coursework: Cognitive and Physiological Psychology"
 
 feature_NITkit:
   - image_path: NITkit.jpg
@@ -32,7 +32,7 @@ feature_NITkit:
     date: "2013.4 - 2018.3"
     title: "Kitakyushu National college of Technology"
     subtitle: "Associate degree in Engineering"
-    excerpt: " » Department: Mechanical Engineering (GPA: 3.40 / 4.00) <br> » Thesis: Design and Development of a Pulse-tube Refrigerator for the Competition"
+    excerpt: " » Department: Mechanical Engineering (GPA: 3.40 / 4.00) <br> » Research Topic: Heat Transfer Engineering, Production Engineering"
 
 # Research Experience
 feature_EAAA:
