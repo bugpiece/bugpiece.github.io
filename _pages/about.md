@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Exoskeleton Researcher"
+title: "Daichi KUSUMOTO"
 excerpt: "MDes Student at Kyushu University"
 header:
   overlay_color: "#000"
@@ -32,7 +32,7 @@ feature_NITkit:
     date: "2013.4 - 2018.3"
     title: "Kitakyushu National college of Technology"
     subtitle: "Associate degree in Engineering"
-    excerpt: " » Department: Mechanical Engineering (GPA: 3.40 / 4.00) <br> » Thesis: Design and Development of a Pulse-tube Refrigerator for the Competition"
+    excerpt: " » Department: Mechanical Engineering (GPA: 3.40 / 4.00) <br> » Research Topic: Heat Transfer Engineering, Production Engineering"
 
 # Research Experience
 feature_EAAA:
