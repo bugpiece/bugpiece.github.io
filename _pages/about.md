@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Exoskeleton Researcher"
+title: "Daichi Kusumoto"
 excerpt: "MDes Student at Kyushu University"
 header:
   overlay_color: "#000"
