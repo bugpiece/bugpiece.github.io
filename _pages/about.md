@@ -49,7 +49,7 @@ feature_SUBARU:
     date: "2018.4 ~ 2023.5"
     title: "Project Manager / Production Engineer"
     subtitle: "<i> SUBARU Corporation (Japanese vehicle manufacture) </i>"
-    excerpt: " » Directed an in-house task force, collaborating with IT developers to implement a Bill of Materials system. <br> » Designed factory logistics and process layouts based on the Toyota Production System (TPS), overseeing both external suppliers and on-site assembly workers for implementation."
+    excerpt: " » Directed an in-house task force, collaborating with IT developers to implement a Bill of Process system. <br> » Designed factory logistics and process layouts based on the Toyota Production System (TPS), overseeing both external suppliers and on-site assembly workers for implementation."
 
 feature_TE:
   - image_path: NITkit.jpg
