@@ -8,7 +8,6 @@ ruby '3.1.4'
 
 # ローカル環境用のGem
 group :development do
-  gem "jekyll-scholar", group: :jekyll_plugins
 end
 
 # GitHub Pages環境用のGem
