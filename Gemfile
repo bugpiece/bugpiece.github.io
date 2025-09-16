@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "webrick", "~> 1.7"
 gem "nokogiri", "< 1.16"
-ruby '2.7.8'
+ruby '3.1.4'
 
 # ローカル環境用のGem
 group :development do
@@ -13,11 +13,12 @@ end
 
 # GitHub Pages環境用のGem
 group :jekyll_plugins do
-  gem "github-pages", "<= 227"
+  gem "github-pages"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "hawkins"
   gem "dotenv"
+  gem "faraday-retry"
 end
 
 # Windows特有のGem

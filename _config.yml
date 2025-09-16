@@ -278,6 +278,7 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-scholar
 
 # Mimic GitHub Pages with --safe
 whitelist:
@@ -286,6 +287,7 @@ whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-scholar
 
 
 # Archives
@@ -339,8 +341,8 @@ scholar:
   bibliography: conferences.bib
   bibliography_template: bib
 
-  replace_strings: true
-  join_strings:    true
+  replace_strings: false
+  join_strings:    false
 
   use_raw_bibtex_entry: false
 

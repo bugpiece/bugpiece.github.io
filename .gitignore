@@ -1,3 +1,7 @@
 _site/
 *.env
 Gemfile.lock
+GEMINI.md
+.DS_Store
+.vscode/
+.idea/
