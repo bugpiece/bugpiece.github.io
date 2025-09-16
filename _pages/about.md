@@ -80,4 +80,4 @@ My main research interests are in Human-Machine Motor Co-operation, Motor Contro
 
 Recent News
 ------
-November.2024 Opened this website.
+August.2025 Completed my master's thesis. [PDF](/files/20250818_kusumoto_master_thesis.pdf)
