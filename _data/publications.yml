@@ -1,10 +1,19 @@
+- id: J1
+  type: journal
+  date: 2025-12-01
+  title: Human Motor Responses to Different Assistance Onset Timings During Powered Elbow Flexion
+  authors: Daichi Kusumoto, Wen Liang Yeoh, Jeewon Choi, Ping Yeap Loh, Satoshi Muraki
+  venue: Applied Ergonomics
+  note: Conditionally accepted (Q1; acceptance rate 20-30%)
 - id: C2
+  type: conference
   date: 2024-12-01
   title: Effects of Start Time in Power-Assisted Elbow Flexion on Human-Motor Cooperation
   authors: Daichi Kusumoto, Teerapapa Luecha, Jeewon Choi, Wen Liang Yeoh, Ping Yeap Loh, Satoshi Muraki
   venue: The 25th Conference of Society of Instrument and Control Engineers, System Integration Division
   location: Morioka, Japan
 - id: C1
+  type: conference
   date: 2024-06-01
   title: Exploring the Initiation Timing of Assistance in Cooperation with Motion Assist Devices
   authors: Daichi Kusumoto, Teerapapa Luecha, Wen Liang Yeoh, Ping Yeap Loh, Satoshi Muraki
