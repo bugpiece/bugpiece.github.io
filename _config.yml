@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Daichi Kusumoto"
 title_separator          : "-"
 name                     : &name "Daichi Kusumoto"
-description              : &description "MDes Student at Kyushu University"
+description              : &description "PhD Student at UMD"
 url                      : https://bugpiece.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bugpiece/bugpiece.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "Profile_20241120.jpg"
   name             : "Daichi Kusumoto"
   pronouns         : # example: "she/her"
-  bio              : "PhD Applicant"
+  bio              : "PhD Student"
   location         : "Japan"
   employer         : #
   uri              : # URL
