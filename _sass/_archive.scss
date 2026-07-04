@@ -327,7 +327,7 @@
         }
   
         .archive__item-body {
-          @include span(9 at 1);
+          @include span(8 at 1);
           @include prefix(0.2 of 12);
           @include suffix(0.2 of 12);
         }
@@ -342,13 +342,16 @@
         }
 
         .archive__item-datebox {
-          @include span(1.5 of 12 last);
+          @include span(2.5 of 12 last);
         }
 
         .archive__item-date {
           word-break: break-normal;
+          overflow-wrap: break-word;
           text-align: right;
+          font-size: $type-size-6;
           margin-top: 0;
+          padding-right: 0.15em;
           border-bottom: none;
         }
 
