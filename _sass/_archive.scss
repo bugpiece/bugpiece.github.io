@@ -283,176 +283,153 @@
     }
     
     
- /*
-   Mini Features
+/*
+   Mini features (Education / Research Experience entries)
    ========================================================================== */
-  
-   .minifeature__wrapper {
-    @include clearfix();
-    margin-bottom: 0.25em;
+
+.minifeature__wrapper {
+  @include clearfix();
+  margin-bottom: 1.4em;
+}
+
+.page__content h2 + .minifeature__wrapper {
+  margin-top: 1.25em;
+}
+
+.minifeature__item--left {
+  .archive__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1em;
   }
 
-  /* Refined Education / Research Experience entries */
-  .minifeature__item--left {
-    border-bottom: 1px solid $border-color;
-    padding-bottom: 1.2em;
-    margin-bottom: 1.3em;
+  /* organization logo: fixed square box so every entry aligns */
+  .archive__item-teaser {
+    flex: 0 0 56px;
+    border-radius: 0;
 
-    /* Institution / lab names are links embedded in the entry text */
-    .org-link {
-      color: inherit;
-      text-decoration: none;
-
-      &:hover {
-        color: $link-color;
-        text-decoration: underline;
-      }
-    }
-
-    .archive__item-teaser img {
+    img {
       display: block;
-      width: auto;
-      max-width: 100%;
-      max-height: 52px;
-      margin: 0.15em auto 0;
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+    }
+  }
+
+  .archive__item-body {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .archive__item-datebox {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  .archive__item-title {
+    margin: 0 0 0.15em;
+    font-family: $header-font-family;
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.4;
+    color: $text-color;
+    border-bottom: none;
+  }
+
+  .org-link {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: underline;
+    }
+  }
+
+  .archive__item-subtitle {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: $text-color;
+
+    p {
+      margin: 0;
+      text-indent: 0;
+    }
+  }
+
+  /* what was actually done: readable body text, not a footnote */
+  .archive__item-excerpt {
+    margin-top: 0.35em;
+    font-size: 0.85em;
+    line-height: 1.55;
+    color: $text-color;
+
+    p {
+      margin: 0;
+      text-indent: 0;
+    }
+  }
+
+  /* lab / advisor: supporting detail, deliberately quiet */
+  .archive__item-note {
+    margin-top: 0.3em;
+    font-size: 0.78em;
+    line-height: 1.5;
+    color: mix(#fff, $text-color, 35%);
+  }
+
+  .archive__item-date {
+    margin: 0.25em 0 0;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1.4;
+    color: mix(#fff, $text-color, 25%);
+    white-space: nowrap;
+    text-align: right;
+    border-bottom: none;
+  }
+
+  /* neutralize the generic archive hover effects (underline + logo shadow) */
+  .archive__item:hover {
+    .archive__item-teaser {
+      box-shadow: none;
     }
 
     .archive__item-title {
-      font-size: 1.02em;
-      font-weight: 700;
-      line-height: 1.3;
-      color: $text-color;
+      text-decoration: none;
+    }
+  }
+
+  /* narrow screens: date moves above the entry, logo shrinks */
+  @media (max-width: 640px) {
+    .archive__item {
+      flex-wrap: wrap;
+      gap: 0.8em;
     }
 
-    .archive__item-subtitle {
-      color: $primary-color;
-      line-height: 1.45;
+    .archive__item-teaser {
+      flex-basis: 44px;
+
+      img {
+        width: 44px;
+        height: 44px;
+      }
     }
 
-    .archive__item-excerpt {
-      margin-top: 0.3em;
-      font-size: 0.86em;
-      line-height: 1.5;
-      color: $primary-color;
+    /* flex-basis 0 keeps the body beside the logo instead of wrapping under it */
+    .archive__item-body {
+      flex: 1 1 0;
+    }
+
+    .archive__item-datebox {
+      order: -1;
+      flex: 1 0 100%;
+      margin-left: 0;
     }
 
     .archive__item-date {
-      color: $primary-color;
-      font-weight: 400;
+      margin: 0;
+      text-align: left;
     }
   }
-
-  
-  .minifeature__item {
-    margin-bottom: 2em;
-    font-size: 1.25rem;
-  
-    @include breakpoint($xsmall) {
-      margin-bottom: 0;
-      @include gallery(4 of 12);
-  
-      .minifeature__item-teaser {
-        max-height: 200px;
-        overflow: hidden;
-      }
-    }
-  
-    &--left {
-      @include full();
-      font-size: 1.25rem;
-  
-      .archive__item-teaser {
-        margin-bottom: 2em;
-      }
-  
-      @include breakpoint($xsmall) {
-  
-        .archive__item-teaser {
-          @include span(1.5 of 12);
-        }
-  
-        .archive__item-title {
-          margin-top: 0;
-          margin-bottom: 0.5em;
-          border-bottom: none;
-        }
-  
-        .archive__item-body {
-          @include span(8 at 1);
-          @include prefix(0.2 of 12);
-          @include suffix(0.2 of 12);
-        }
-
-        .archive__item-subtitle {
-          margin-bottom: 0.5em;
-          font-size: $type-size-6;
-
-          & + p {
-            text-indent: 0;
-          }
-        }
-
-        .archive__item-datebox {
-          @include span(2.5 of 12 last);
-        }
-
-        .archive__item-date {
-          word-break: break-normal;
-          overflow-wrap: break-word;
-          text-align: right;
-          font-size: $type-size-6;
-          margin-top: 0;
-          padding-right: 0.15em;
-          border-bottom: none;
-        }
-
-
-      }
-    }
-  
-    &--right {
-      @include full();
-      font-size: 1.25rem;
-  
-      .archive__item-teaser {
-        margin-bottom: 2em;
-      }
-  
-      @include breakpoint($small) {
-        text-align: right;
-  
-        .archive__item-teaser {
-          @include span(5 of 12 rtl);
-        }
-  
-        .archive__item-body {
-          @include span(7 of 12 last rtl);
-          @include prefix(0.5 of 12);
-          @include suffix(1 of 12);
-        }
-      }
-    }
-  
-    &--center {
-      @include full();
-      font-size: 1.25rem;
-  
-      .archive__item-teaser {
-        margin-bottom: 2em;
-      }
-  
-      @include breakpoint($small) {
-        text-align: center;
-  
-        .archive__item-teaser {
-          margin: 0 auto;
-          width: span(5 of 12);
-        }
-  
-        .archive__item-body {
-          margin: 0 auto;
-          width: span(7 of 12);
-        }
-      }
-    }
-  }
+}
