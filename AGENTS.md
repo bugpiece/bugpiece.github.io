@@ -1,19 +1,75 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
-Content lives in `_pages`, `_posts`, `_portfolio`, `_talks`, and `_teaching`, each driven by layouts in `_layouts` and reusable snippets in `_includes`. Styles sit under `_sass`, while source scripts belong in `assets/js/_main.js` and compile to `assets/js/main.min.js`; treat `_site/` as disposable output. Use the `markdown_generator/` helpers only when bulk-importing data and keep ad hoc assets in `assets/` or `files/` so links remain stable.
+## What this repository is
 
-## Build, Test, and Development Commands
-Install Ruby gems with `bundle install` and JavaScript dependencies with `npm install` when working on assets. Run `bundle exec jekyll serve --livereload --host localhost` for a live preview at http://localhost:4000 and quick feedback on build issues. Before pushing, run `bundle exec jekyll build` for a clean production render and `npm run build:js` whenever anything under `assets/js/` changes to refresh the minified bundle.
+Personal academic website for Daichi Kusumoto, built with **Jekyll** and
+deployed to **GitHub Pages** at <https://bugpiece.github.io>. It started from the
+academicpages theme but has been trimmed down to two live pages:
 
-## Coding Style & Naming Conventions
-Keep YAML front matter keys lowercase with underscores (e.g., `layout`, `permalink`) and indent nested lists in Markdown by two spaces to match existing posts. Aim for ~100-character lines, prefer reference-style links, and lean on the theme’s utility classes instead of bespoke inline HTML. SCSS additions should extend the partials in `_sass/`, while JavaScript follows the existing IIFE pattern in `_main.js` for compatibility with `uglify`.
+- **Home** — `_pages/about.md` (`permalink: /`); bio plus the Education and
+  Research Experience blocks.
+- **Publications** — `_pages/publications.md`; rendered from data.
 
-## Testing Guidelines
-Treat `bundle exec jekyll build` as the baseline regression test and resolve any warnings or missing-asset notices. For visual changes, preview with `bundle exec jekyll serve`, then spot-check the home, about, teaching, and talks pages on both desktop and mobile widths. If navigation, search, or other scripts change, rerun `npm run build:js` and verify the console stays clean before shipping.
+The header also links a **CV** entry directly to a PDF in `files/`. The old demo
+collections (blog posts, talks, teaching, portfolio) and their tooling have been
+removed.
 
-## Commit & Pull Request Guidelines
-Write concise, action-oriented commit messages mirroring the current history (e.g., `Fix typo in excerpt for SUBARU project description`) and keep unrelated work in separate commits. Pull requests should summarize intent, reference any GitHub issue, and note the commands used for verification. Include screenshots or GIFs for layout changes and mention new content paths so reviewers can reproduce your checks quickly.
+## Project structure
 
-## Content Authoring Tips
-Store structured lists (publications, talks, courses) in `_data/` to reduce duplication across pages. Place downloads in `files/` and reference them with `/files/<filename>` links to keep URLs consistent. Use front-matter flags (such as `header` or `sidebar`) instead of inline styling so future theme updates remain drop-in.
+- `_pages/` — the live pages only: `about.md`, `publications.md`, `404.md`,
+  `sitemap.md`.
+- `_data/` — structured content:
+  - `publications.yml` — journal/conference entries (the source of the
+    Publications page).
+  - `navigation.yml` — the header menu (`main:` list).
+  - `authors.yml`, `ui-text.yml`, `comments/` — theme data.
+- `_includes/`, `_layouts/` — theme templates. `_includes/minifeature_row`
+  renders the Education / Research Experience items on the home page.
+- `_sass/` — styles. `_archive.scss` holds the minifeature + date-column layout;
+  `_pub.scss` holds Publications-page tweaks.
+- `assets/` — compiled CSS/JS (`assets/js/main.min.js`); `images/`; `files/`
+  (PDFs: CV, master thesis, slides).
+- `_config.yml` — site configuration. `.github/workflows/jekyll.yml` — the
+  deploy workflow. `_site/` — generated output; disposable and gitignored.
+
+Note: `_config.yml` still declares `teaching`/`publications`/`portfolio`/`talks`
+collections, but those directories were deleted and only `publications.yml`
+data is actually used.
+
+## Common edits
+
+- **Add a publication:** append an entry to `_data/publications.yml`
+  (`type: journal|conference`, `date`, `title`, `authors`, `venue`, optional
+  `note` / `location`). `publications.md` groups entries by year automatically.
+- **Edit bio / Education / Research Experience:** `_pages/about.md` — the
+  `feature_*` front-matter blocks and the page body.
+- **Header menu:** `_data/navigation.yml`. Keep the `main:` list clean — a
+  commented-out or empty list item still renders as a blank tab.
+- **Update the CV:** put the new PDF in `files/` and point the `CV` entry's
+  `url` in `navigation.yml` at it (remove the old PDF).
+
+## Build and preview
+
+- Ruby **3.1.4** (`.ruby-version`). Install gems with `bundle install`.
+- Live preview: `bundle exec jekyll serve --livereload` → <http://localhost:4000>.
+- Production build check: `bundle exec jekyll build` (writes to `_site/`);
+  resolve any warnings.
+- There is **no Node/JS build step** anymore (`package.json` and the JS tooling
+  were removed). `assets/js/main.min.js` is committed as-is; editing
+  `assets/js/_main.js` will not regenerate it without reintroducing a toolchain.
+
+## Deploy
+
+Pushing to `master` triggers `.github/workflows/jekyll.yml`, which builds with
+Jekyll (`JEKYLL_ENV=production`) and publishes to GitHub Pages. No manual build
+or upload is needed — check the **Actions** tab for status.
+
+## Conventions
+
+- YAML front-matter keys stay lowercase with underscores; indent nested lists by
+  two spaces.
+- Store downloads in `files/` and link them as `/files/<name>`; images in
+  `images/`.
+- Extend styles through the `_sass/` partials rather than inline CSS.
+- Write concise, action-oriented commit messages (e.g. "Fix CV nav position by
+  removing empty menu entries"). Commit or push only when the maintainer asks.
