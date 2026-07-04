@@ -2,7 +2,58 @@
    For publication page.
    ========================================================================== */
 
-   .pubyear {
+.pub-item {
+    margin: 0 0 1.6em;
+    padding: 0.1em 0 0.1em 1em;
+    border-left: 3px solid $border-color;
+    transition: border-color 0.15s ease;
+
+    &:hover {
+        border-left-color: $primary-color;
+    }
+}
+
+.pub-title {
+    font-size: 1.05em;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 0.2em;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $link-color;
+        }
+    }
+}
+
+.pub-authors {
+    font-size: 0.85em;
+    line-height: 1.45;
+    margin-bottom: 0.15em;
+}
+
+.pub-venue {
+    font-size: 0.85em;
+    line-height: 1.45;
+    color: $primary-color;
+    margin-bottom: 0.4em;
+}
+
+.pub-links a {
+    font-size: 0.8em;
+    color: $link-color;
+    word-break: break-all;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.pubyear {
     color: #7a8288;
     border-bottom: 1px solid #f2f3f3;
 }

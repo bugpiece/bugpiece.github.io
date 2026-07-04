@@ -16,18 +16,24 @@ How to use jekyll-scholar: https://open-research.gemmadanks.com/tutorials/how-to
 -->
 
 {% assign publications = site.data.publications | sort: "date" | reverse %}
+{% assign me = "Daichi Kusumoto" %}
 
 {% assign journals = publications | where: "type", "journal" %}
 {% if journals.size > 0 %}
 ## Journal Articles
 {% assign current_year = "" %}
 {% for item in journals %}
-  {% assign year = item.date | date: "%Y" %}
-  {% if year != current_year %}
+{% assign year = item.date | date: "%Y" %}
+{% if year != current_year %}
 ### {{ year }}
 {% assign current_year = year %}
-  {% endif %}
-- *{{ item.title }}*. {{ item.authors }}. _{{ item.venue }}_{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.articleno %}, {{ item.articleno }}{% endif %}{% if item.note %}, {{ item.note }}{% endif %} ({{ item.date | date: "%B %Y" }}).{% if item.doi %} [https://doi.org/{{ item.doi }}](https://doi.org/{{ item.doi }}){% endif %}
+{% endif %}
+<div class="pub-item">
+<div class="pub-title">{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
+<div class="pub-authors">{{ item.authors | replace: me, "<b>Daichi Kusumoto</b>" }}</div>
+<div class="pub-venue"><em>{{ item.venue }}</em>{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.articleno %}, {{ item.articleno }}{% endif %} &middot; {{ item.date | date: "%B %Y" }}{% if item.note %} &middot; {{ item.note }}{% endif %}</div>
+{% if item.doi %}<div class="pub-links"><a href="https://doi.org/{{ item.doi }}">https://doi.org/{{ item.doi }}</a></div>{% endif %}
+</div>
 {% endfor %}
 {% endif %}
 
@@ -36,11 +42,16 @@ How to use jekyll-scholar: https://open-research.gemmadanks.com/tutorials/how-to
 ## Conference Proceedings
 {% assign current_year = "" %}
 {% for item in conferences %}
-  {% assign year = item.date | date: "%Y" %}
-  {% if year != current_year %}
+{% assign year = item.date | date: "%Y" %}
+{% if year != current_year %}
 ### {{ year }}
 {% assign current_year = year %}
-  {% endif %}
-- *{{ item.title }}*. {{ item.authors }}. _{{ item.venue }}_, {{ item.location }} ({{ item.date | date: "%B %Y" }}).
+{% endif %}
+<div class="pub-item">
+<div class="pub-title">{% if item.doi %}<a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
+<div class="pub-authors">{{ item.authors | replace: me, "<b>Daichi Kusumoto</b>" }}</div>
+<div class="pub-venue"><em>{{ item.venue }}</em>{% if item.location %}, {{ item.location }}{% endif %} &middot; {{ item.date | date: "%B %Y" }}{% if item.note %} &middot; {{ item.note }}{% endif %}</div>
+{% if item.doi %}<div class="pub-links"><a href="https://doi.org/{{ item.doi }}">https://doi.org/{{ item.doi }}</a></div>{% endif %}
+</div>
 {% endfor %}
 {% endif %}
