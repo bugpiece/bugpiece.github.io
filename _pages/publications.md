@@ -27,7 +27,7 @@ How to use jekyll-scholar: https://open-research.gemmadanks.com/tutorials/how-to
 ### {{ year }}
 {% assign current_year = year %}
   {% endif %}
-- *{{ item.title }}*. {{ item.authors }}. _{{ item.venue }}_{% if item.note %}, {{ item.note }}{% endif %} ({{ item.date | date: "%B %Y" }}).
+- *{{ item.title }}*. {{ item.authors }}. _{{ item.venue }}_{% if item.volume %}, {{ item.volume }}{% endif %}{% if item.articleno %}, {{ item.articleno }}{% endif %}{% if item.note %}, {{ item.note }}{% endif %} ({{ item.date | date: "%B %Y" }}).{% if item.doi %} [https://doi.org/{{ item.doi }}](https://doi.org/{{ item.doi }}){% endif %}
 {% endfor %}
 {% endif %}
 

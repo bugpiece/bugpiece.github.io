@@ -1,10 +1,12 @@
 - id: J1
   type: journal
-  date: 2025-12-01
+  date: 2026-07-01
   title: Human Motor Responses to Different Assistance Onset Timings During Powered Elbow Flexion
   authors: Daichi Kusumoto, Wen Liang Yeoh, Jeewon Choi, Ping Yeap Loh, Satoshi Muraki
   venue: Applied Ergonomics
-  note: Conditionally accepted (Q1; acceptance rate 20-30%)
+  volume: 134
+  articleno: 104721
+  doi: 10.1016/j.apergo.2025.104721
 - id: C2
   type: conference
   date: 2024-12-01
