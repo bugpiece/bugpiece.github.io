@@ -10,6 +10,13 @@ header:
 author_profile: True
 
 # Education
+feature_UMD:
+  - image_path: umd.png
+    alt: "UMD"
+    date: "2026.8 -"
+    title: "University of Maryland, College Park"
+    subtitle: "Ph.D. in Computer Science (incoming)"
+
 feature_KU:
   - image_path: KU.png
     alt: "KU"
@@ -35,6 +42,13 @@ feature_NITkit:
     excerpt: "Department: Mechanical Engineering<br>Research Area: Heat Transfer Engineering, Production Engineering"
 
 # Research Experience
+feature_EmD:
+  - image_path: umd.png
+    alt: "UMD"
+    date: "2026.8 -"
+    title: "PhD Student (incoming)"
+    subtitle: "<i>Embodied Dynamics Laboratory, University of Maryland<br>Advisor: Prof. Jun Nishida</i>"
+
 feature_EAAA:
   - image_path: Geiko.jpg
     alt: "EAAA"
@@ -67,11 +81,13 @@ redirect_from:
 I am a researcher exploring how haptic and virtual technologies can support the teaching and learning of physical skills. Building on my master's research on human-exoskeleton motor cooperation at Kyushu University, I now focus on augmenting the interaction between learners and instructors. My goal is to make embodied knowledge accessible to anyone, regardless of age, ability, or background.
 
 ## Education
+{% include minifeature_row id="feature_UMD" type="left" %}
 {% include minifeature_row id="feature_KU" type="left" %}
 {% include minifeature_row id="feature_OUJ" type="left" %}
 {% include minifeature_row id="feature_NITkit" type="left" %}
 
 ## Research Experience
+{% include minifeature_row id="feature_EmD" type="left" %}
 {% include minifeature_row id="feature_EAAA" type="left" %}
 {% include minifeature_row id="feature_SUBARU" type="left" %}
 {% include minifeature_row id="feature_TE" type="left" %}
