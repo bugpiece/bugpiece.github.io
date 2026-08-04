@@ -15,8 +15,8 @@ feature_UMD:
     alt: "UMD"
     date: "2026.8 -"
     title: "<a class='org-link' href='https://www.cs.umd.edu/'>University of Maryland, College Park</a>"
-    subtitle: "Ph.D. in Computer Science (incoming)"
-    note: "<a class='org-link' href='https://emd.cs.umd.edu/'>Embodied Dynamics Laboratory</a> &middot; Advisor: Prof. Jun Nishida"
+    subtitle: "Ph.D. in Computer Science"
+    note: "<a class='org-link' href='https://emd.cs.umd.edu/'>Embodied Dynamics Laboratory</a> &middot; Advisor: <a class='org-link' href='https://junis.sakura.ne.jp/wp/'>Prof. Jun Nishida</a>"
 
 feature_KU:
   - image_path: KU.png
@@ -57,9 +57,13 @@ redirect_from:
   - /about.html
 ---
 
-I am an incoming Ph.D. student in Computer Science at the [University of Maryland, College Park](https://www.cs.umd.edu/), joining the [Embodied Dynamics Laboratory](https://emd.cs.umd.edu/) led by [Prof. Jun Nishida](https://junis.sakura.ne.jp/wp/) in August 2026. I explore how haptic and virtual technologies can support the teaching and learning of physical skills, with the goal of making embodied knowledge accessible to anyone, regardless of age, ability, or background.
+<div class="page__intro" markdown="1">
 
-My path to HCI runs through both industry and ergonomics: I spent five years at SUBARU as a project manager and production engineer, developing systems for capturing and passing on manufacturing skills, and then studied human&ndash;exoskeleton motor cooperation for my Master of Design at Kyushu University.
+I am a Ph.D. student in Computer Science at the University of Maryland, College Park, working with Prof. Jun Nishida in the Embodied Dynamics Laboratory. I explore how assistive technology can augment skill acquisition by sharing sensations and bodily experiences between people, regardless of age, ability, or background.
+
+I come to HCI from industry and ergonomics: five years at SUBARU on systems for transferring assembly knowledge and skills between workers, then a Master of Design at Kyushu University on how people adapt to powered exoskeletons.
+
+</div>
 
 ## Background
 {% include minifeature_row id="feature_UMD" type="left" %}

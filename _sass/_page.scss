@@ -80,18 +80,24 @@
       }
     }
   
+    /* intro paragraphs above the Background timeline */
+    .page__intro p {
+      text-align: justify;
+      hyphens: auto;
+    }
+
     a {
       text-decoration: underline;
-  
+
       &:hover {
         text-decoration: underline;
-  
+
         img {
           box-shadow: 0 0 10px rgba(#000, 0.25);
         }
       }
     }
-  
+
     dt {
       margin-top: 1em;
       font-family: $sans-serif;
