@@ -20,11 +20,11 @@
     margin-bottom: 0.2em;
 
     a {
-        color: $text-color;
+        color: $link-color;
         text-decoration: none;
 
         &:hover {
-            color: $link-color;
+            color: $link-color-hover;
         }
     }
 }

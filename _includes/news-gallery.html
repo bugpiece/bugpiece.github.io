@@ -1,0 +1,32 @@
+{% if include.item.photos.size > 0 %}
+<div class="news-gallery{% if include.preview %} news-gallery--preview{% else %} news-gallery--detail{% endif %}"{% unless include.preview %} data-news-gallery{% endunless %} role="group" aria-label="Photos">
+  {% unless include.preview %}<div class="news-gallery__stage">{% endunless %}
+  {% for photo in include.item.photos %}
+  {% assign photo_url = include.item.url | append: photo.file %}
+  {% assign link_url = photo_url %}
+  {% if include.preview %}{% assign link_url = include.item.url %}{% endif %}
+  <figure class="news-photo{% if include.preview %} news-photo--{{ photo.focus | default: 'center' | escape }}{% endif %}">
+    <a href="{{ link_url | relative_url }}"{% if include.preview %} aria-label="{{ include.item.title | escape }}"{% endif %}>
+      <img src="{{ photo_url | relative_url }}" alt="{{ photo.alt | escape }}"{% if photo.width and photo.height %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %}{% if include.lazy or forloop.first == false %} loading="lazy"{% endif %} decoding="async">
+    </a>
+    {% if photo.caption %}<figcaption>{{ photo.caption | escape }}</figcaption>{% endif %}
+  </figure>
+  {% if include.preview %}{% break %}{% endif %}
+  {% endfor %}
+  {% unless include.preview %}
+  {% if include.item.photos.size > 1 %}
+  <button type="button" class="news-gallery__arrow news-gallery__arrow--previous" data-photo-previous aria-label="Previous photo" hidden><span aria-hidden="true">&#8249;</span></button>
+  <button type="button" class="news-gallery__arrow news-gallery__arrow--next" data-photo-next aria-label="Next photo" hidden><span aria-hidden="true">&#8250;</span></button>
+  {% endif %}
+  </div>
+  {% if include.item.photos.size > 1 %}
+  <div class="news-gallery__indicators" role="group" aria-label="Choose a photo" hidden>
+    {% for photo in include.item.photos %}
+    <button type="button" class="news-gallery__indicator" aria-label="Photo {{ forloop.index }} of {{ include.item.photos.size }}: {{ photo.alt | escape }}" data-photo-index="{{ forloop.index0 }}"><span aria-hidden="true"></span></button>
+    {% endfor %}
+  </div>
+  <p class="visually-hidden" data-photo-status aria-live="polite" aria-atomic="true"></p>
+  {% endif %}
+  {% endunless %}
+</div>
+{% endif %}

@@ -1,3 +1,6 @@
 <script src="{{ base_path }}/assets/js/main.min.js"></script>
+{% if page.layout == 'news_article' %}
+<script src="{{ '/assets/js/news-gallery.js' | relative_url }}" defer></script>
+{% endif %}
 
 {% include analytics.html %}

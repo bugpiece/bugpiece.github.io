@@ -6,3 +6,6 @@ GEMINI.md
 .vscode/
 .idea/
 dev-config.yml
+local/news-venv/
+local/news-originals/
+__pycache__/

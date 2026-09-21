@@ -21,14 +21,14 @@ repository               : "bugpiece/bugpiece.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Profile_20241120.jpg"
+  avatar           : "people/profile-2026-09-02.webp"
   name             : "Daichi Kusumoto"
   pronouns         : # example: "she/her"
   bio              : "PhD Student"
   location         : "College Park, MD"
   employer         : #
   uri              : # URL
-  email            : "bugpiece@gmail.com"
+  email            : "daichi@umd.edu"
 
   # Academic websites
   arxiv            : # URL
@@ -141,6 +141,9 @@ include:
   - _pages
   - files
 exclude:
+  - docs
+  - scripts
+  - AGENTS.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

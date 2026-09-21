@@ -1,0 +1,19 @@
+// Neutral links by default; the site-wide accent appears only on hover.
+// Important overrides the theme's button colors and component-specific rules.
+a[href] {
+  &,
+  &:visited,
+  &:focus,
+  &:active {
+    color: $link-color !important;
+  }
+
+  &:hover {
+    color: $link-color-hover !important;
+  }
+
+  // Linked icons follow their label instead of using social-brand colors.
+  .fa, .fas, .far, .fab, .ai {
+    color: inherit !important;
+  }
+}

@@ -4,9 +4,9 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.5"
-  overlay_image: Kloten_Forest.jpg
+  overlay_color: "#30343b"
+  overlay_filter: "rgba(48, 52, 59, 0.35)"
+  overlay_image: headers/kloten-2024-10-28.webp
   caption: "Photo by Daichi Kusumoto / Kloten, Zurich"
 excerpt: "List of journal papers and conference proceedings"
 

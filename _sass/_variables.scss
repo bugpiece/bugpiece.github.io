@@ -90,11 +90,11 @@
    
    
    /* links */
-   $link-color                 : $info-color;
-   $link-color-hover           : mix(#000, $link-color, 25%);
-   $link-color-visited         : mix(#fff, $link-color, 25%);
-   $masthead-link-color        : $primary-color;
-   $masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+   $link-color                 : $text-color;
+   $link-color-hover           : #38609c;
+   $link-color-visited         : $link-color;
+   $masthead-link-color        : $link-color;
+   $masthead-link-color-hover  : $link-color-hover;
    
    
    /*
