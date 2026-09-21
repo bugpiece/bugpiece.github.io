@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Daichi Kusumoto"
 title_separator          : "-"
 name                     : &name "Daichi Kusumoto"
-description              : &description "PhD Student at UMD"
+description              : &description "PhD Student at University of Maryland"
 url                      : https://bugpiece.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bugpiece/bugpiece.github.io"
@@ -126,6 +126,7 @@ og_image                 :  # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
+  alternate_name         : "楠本大地"
   links: # An array of links to social media profiles
 
 

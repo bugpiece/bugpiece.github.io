@@ -1,0 +1,48 @@
+/* Shared reading rhythm for the English and Japanese content. */
+body {
+  letter-spacing: normal;
+}
+
+.page__content {
+  line-height: 1.75;
+}
+
+.page__content p:lang(ja) {
+  font-size: 0.9em;
+}
+
+@media (max-width: 767px) {
+  .page__content .page__intro p {
+    text-align: left;
+    hyphens: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.4;
+}
+
+.page__title {
+  line-height: 1.25;
+}
+
+.page__content .news-title,
+.news-article .news-title {
+  line-height: 1.4;
+}
+
+.pub-title {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.pub-authors,
+.pub-venue {
+  line-height: 1.65;
+}
+
+code, pre, kbd, samp {
+  letter-spacing: normal;
+}

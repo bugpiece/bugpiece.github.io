@@ -31,12 +31,26 @@
         {% endif %}
         
         <div class="archive__item-body">
-          {% if f.title %}
-              <h6 class="archive__item-title">{{ f.title }}</h6>
-          {% endif %}
+          <div class="archive__item-header">
+            <div class="archive__item-heading">
+              {% if f.title %}
+                <h3 class="archive__item-title">{{ f.title }}</h3>
+              {% endif %}
+              {% if f.subtitle %}
+                <div class="archive__item-subtitle">{{ f.subtitle }}</div>
+              {% endif %}
+            </div>
+            {% if f.date %}
+              <div class="archive__item-date">{{ f.date }}</div>
+            {% endif %}
+          </div>
 
-          {% if f.subtitle %}
-              <div class="archive__item-subtitle">{{ f.subtitle }}</div>
+          {% if f.highlights %}
+            <ul class="archive__item-highlights">
+              {% for highlight in f.highlights %}
+                <li>{{ highlight }}</li>
+              {% endfor %}
+            </ul>
           {% endif %}
 
           {% if f.excerpt %}
@@ -45,20 +59,10 @@
             </div>
           {% endif %}
 
-          {% if f.note %}
-            <div class="archive__item-note">{{ f.note }}</div>
-          {% endif %}
-
           {% if f.url %}
             <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
           {% endif %}
         </div>
-
-        {% if f.date %}
-          <div class="archive__item-datebox">
-              <h6 class="archive__item-date">{{ f.date }}</h6>
-          </div>
-        {% endif %}
 
       </div>
     </div>

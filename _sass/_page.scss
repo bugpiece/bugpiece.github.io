@@ -162,6 +162,12 @@
   
       .page__lead {
         max-width: $medium;
+        // Reserve two subtitle lines on small screens across all cover images.
+        min-height: 3em;
+
+        @include breakpoint($small) {
+          min-height: 1.5em;
+        }
       }
   
       .page__title {

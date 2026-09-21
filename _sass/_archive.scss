@@ -289,7 +289,7 @@
 
 .minifeature__wrapper {
   @include clearfix();
-  margin-bottom: 1.4em;
+  margin-bottom: 2em;
 }
 
 .page__content h2 + .minifeature__wrapper {
@@ -305,13 +305,13 @@
 
   /* organization logo: fixed square box so every entry aligns */
   .archive__item-teaser {
-    flex: 0 0 56px;
+    flex: 0 0 72px;
     border-radius: 0;
 
     img {
       display: block;
-      width: 56px;
-      height: 56px;
+      width: 72px;
+      height: 72px;
       object-fit: contain;
     }
   }
@@ -321,15 +321,23 @@
     min-width: 0;
   }
 
-  .archive__item-datebox {
-    flex: 0 0 auto;
-    margin-left: auto;
+  .archive__item-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.2em 1.2em;
+  }
+
+  .archive__item-heading {
+    flex: 1 1 20em;
+    min-width: 0;
   }
 
   .archive__item-title {
     margin: 0 0 0.15em;
     font-family: $header-font-family;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: 600;
     line-height: 1.4;
     color: $text-color;
@@ -347,21 +355,50 @@
   }
 
   .archive__item-subtitle {
+    margin: 0;
     font-size: 0.9em;
+    font-weight: 300;
     line-height: 1.5;
     color: $text-color;
+    border: 0;
 
     p {
       margin: 0;
       text-indent: 0;
+    }
+  }
+
+  .archive__item-highlights {
+    margin: 0.6em 0 0;
+    padding-left: 1.1em;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.6;
+    list-style: disc;
+
+    li {
+      margin: 0;
+      padding-left: 0.15em;
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    li + li {
+      margin-top: 0.3em;
+    }
+
+    li::marker {
+      color: mix(#fff, $text-color, 30%);
+      font-size: 0.75em;
     }
   }
 
   /* what was actually done: readable body text, not a footnote */
   .archive__item-excerpt {
-    margin-top: 0.35em;
-    font-size: 0.85em;
-    line-height: 1.55;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.6;
     color: $text-color;
 
     p {
@@ -370,20 +407,12 @@
     }
   }
 
-  /* lab / advisor: supporting detail, deliberately quiet */
-  .archive__item-note {
-    margin-top: 0.3em;
-    font-size: 0.78em;
-    line-height: 1.5;
-    color: mix(#fff, $text-color, 35%);
-  }
-
   .archive__item-date {
-    margin: 0.25em 0 0;
-    font-size: 0.75em;
-    font-weight: 700;
+    margin: 0;
+    font-size: 0.85em;
+    font-weight: 400;
     line-height: 1.4;
-    color: mix(#fff, $text-color, 25%);
+    color: mix(#fff, $text-color, 15%);
     white-space: nowrap;
     text-align: right;
     border-bottom: none;
@@ -400,35 +429,32 @@
     }
   }
 
-  /* narrow screens: date moves above the entry, logo shrinks */
+  /* Narrow screens: dates follow the heading; logos retain their own column. */
   @media (max-width: 640px) {
     .archive__item {
-      flex-wrap: wrap;
       gap: 0.8em;
     }
 
     .archive__item-teaser {
-      flex-basis: 44px;
+      flex-basis: 52px;
 
       img {
-        width: 44px;
-        height: 44px;
+        width: 52px;
+        height: 52px;
       }
     }
 
-    /* flex-basis 0 keeps the body beside the logo instead of wrapping under it */
     .archive__item-body {
       flex: 1 1 0;
     }
 
-    .archive__item-datebox {
-      order: -1;
-      flex: 1 0 100%;
-      margin-left: 0;
+    .archive__item-header {
+      display: block;
     }
 
     .archive__item-date {
-      margin: 0;
+      display: block;
+      margin-top: 0.35em;
       text-align: left;
     }
   }

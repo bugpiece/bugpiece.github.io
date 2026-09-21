@@ -2,6 +2,7 @@
 permalink: /
 title: "Daichi Kusumoto"
 excerpt: "PhD Student at UMD"
+description: "Academic website of Daichi Kusumoto（楠本大地）, a Ph.D. student in Computer Science at the University of Maryland, College Park."
 header:
   overlay_color: "#30343b"
   overlay_filter: "rgba(48, 52, 59, 0.35)"
@@ -13,44 +14,49 @@ author_profile: True
 feature_UMD:
   - image_path: organizations/university-of-maryland.webp
     alt: "UMD"
-    date: "2026.8 -"
+    date: "Aug 2026 – present"
     title: "<a class='org-link' href='https://www.cs.umd.edu/'>University of Maryland, College Park</a>"
-    subtitle: "Ph.D. in Computer Science"
-    note: "<a class='org-link' href='https://emd.cs.umd.edu/'>Embodied Dynamics Laboratory</a> &middot; Advisor: <a class='org-link' href='https://junis.sakura.ne.jp/wp/'>Prof. Jun Nishida</a>"
+    subtitle: "Ph.D. student in Computer Science"
+    highlights:
+      - "<a class='org-link' href='https://emd.cs.umd.edu/'>Embodied Dynamics Laboratory</a> (Advisor: <a class='org-link' href='https://junis.sakura.ne.jp/wp/'>Jun Nishida</a>)"
 
 feature_KU:
   - image_path: organizations/kyushu-university.webp
     alt: "KU"
-    date: "2023.10 - 2025.9"
+    date: "Oct 2023 – Sep 2025"
     title: "<a class='org-link' href='https://www.design.kyushu-u.ac.jp/en/home/'>Kyushu University, Graduate School of Design</a>"
-    subtitle: "Master of Design in Human Life Design and Science"
-    excerpt: "Studied human&ndash;exoskeleton motor cooperation, focusing on when assistance should be initiated during powered elbow flexion."
-    note: "<a class='org-link' href='https://www.design.kyushu-u.ac.jp/~muraki/en/index.html'>Laboratory of Ergonomics for All Ages and Abilities</a> &middot; Advisors: Prof. Satoshi MURAKI, Asst. Prof. Ping Yeap LOH"
+    subtitle: "Master of Design"
+    highlights:
+      - "Studied human–exoskeleton motor cooperation, focusing on when assistance should be initiated during powered elbow flexion."
+      - "<a class='org-link' href='https://www.design.kyushu-u.ac.jp/~muraki/en/index.html'>Laboratory of Ergonomics for All Ages and Abilities</a> (Advisors: Satoshi Muraki and Ping Yeap Loh)"
 
 feature_OUJ:
   - image_path: organizations/open-university-of-japan.webp
     alt: "OUJ"
-    date: "2021.10 - 2023.9"
+    date: "Oct 2021 – Sep 2023"
     title: "<a class='org-link' href='https://www.ouj.ac.jp/en/'>The Open University of Japan</a>"
-    subtitle: "Bachelor of Liberal Arts in Psychology and Education"
-    excerpt: "Completed while working full-time at SUBARU; coursework in cognitive and physiological psychology and human&ndash;computer interaction."
+    subtitle: "Bachelor of Liberal Arts"
+    highlights:
+      - "Completed while working full-time at SUBARU; coursework in cognitive and physiological psychology and human–computer interaction."
 
 feature_SUBARU:
   - image_path: organizations/subaru.webp
     alt: "SUBARU"
-    date: "2018.4 - 2023.5"
+    date: "Apr 2018 – May 2023"
     title: "<a class='org-link' href='https://www.subaru.co.jp/en/'>SUBARU Corporation</a>"
     subtitle: "Project Manager / Production Engineer"
-    excerpt: "Led cross-functional development of a manufacturing knowledge-management (Bill of Process) system and VR-based assembly training."
+    highlights:
+      - "Led cross-functional development of a manufacturing knowledge-management (Bill of Process) system and VR-based assembly training."
 
 feature_NITkit:
   - image_path: organizations/nit-kitakyushu.webp
     alt: "NITkit"
-    date: "2013.4 - 2018.3"
+    date: "Apr 2013 – Mar 2018"
     title: "<a class='org-link' href='https://www.kct.ac.jp/en/'>Kitakyushu National College of Technology</a>"
-    subtitle: "Associate Degree in Mechanical Engineering"
-    excerpt: "Undergraduate research on thermoacoustic heat transport and educational demonstrations of heat&ndash;sound energy conversion."
-    note: "Thermoacoustic Engineering Laboratory &middot; Advisor: Takao Koshimizu"
+    subtitle: "Associate Degree in Engineering"
+    highlights:
+      - "Undergraduate research on thermoacoustic heat transport and educational demonstrations of heat–sound energy conversion."
+      - "Thermoacoustic Engineering Laboratory (Advisor: Takao Koshimizu)"
 
 redirect_from:
   - /about/

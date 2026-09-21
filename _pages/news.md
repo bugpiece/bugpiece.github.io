@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "News"
+excerpt: "Updates on research and life"
 permalink: /news/
 author_profile: true
 header:
